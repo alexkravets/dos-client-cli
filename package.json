@@ -1,13 +1,18 @@
 {
-  "name": "dos-client-cli",
+  "name": "@kravc/dos-client-cli",
   "version": "0.1.0",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alexkravets/doc-client-cli.git"
+  },
+  "directories": {
+    "src": "src"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint bin/ src/"
+    "test": "eslint bin/ src/"
   },
   "bin": {
-    "update": "node ./bin/update.js"
+    "update": "bin/update.js"
   },
   "author": "Oleksandr Kravets <a@kra.vc>",
   "license": "ISC",
