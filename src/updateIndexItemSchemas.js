@@ -76,7 +76,7 @@ const updateIndexItemSchemas = (servicesPath) => {
 
     const imports = Object
       .values(enumsMap)
-      .map(name => `import { ${name}Keys } from "./shapes/${name}"`)
+      .map(name => `import { ${name}Keys } from "../shapes/${name}"`)
       .sort()
       .join('\n')
 
