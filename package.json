@@ -1,0 +1,26 @@
+{
+  "name": "dos-client-cli",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint bin/ src/"
+  },
+  "bin": {
+    "update": "node ./bin/update.js"
+  },
+  "author": "Oleksandr Kravets <a@kra.vc>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "read-yaml-file": "^2.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0"
+  }
+}
