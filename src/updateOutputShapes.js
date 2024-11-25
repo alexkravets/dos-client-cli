@@ -49,6 +49,8 @@ const createComponentShape = (componentName, { service, operation, shapesMap, se
   const path = `${servicesPath}/${key}`
   const content = getShape(componentName, schema, { service, operation, shapesMap, servicesPath })
 
+  const folderPath = `${servicesPath}/${service}/shapes`
+  fs.mkdirSync(folderPath, { recursive: true })
   fs.writeFileSync(path, content)
 
   shapesMap[key] = true
