@@ -154,7 +154,7 @@ const getShape = (name, schema, options = {}, importPrefix = './') => {
   const content = `${['import PropTypes from "prop-types"\n', ...uniq(imports).sort()].join('\n')}
 
 const properties = {
-${attributes.sort().join(',\n')}
+${attributes.join(',\n')}
 }
 
 const ${name} = PropTypes.exact(properties)

@@ -26,7 +26,7 @@ const createComponentEnum = (componentName, { service, operation, shapesMap, ser
 ${constants.sort().join('\n')}
 
 const ${componentName}Enum = {
-${values.sort().join(',\n')}
+${values.join(',\n')}
 }
 
 const ${componentName}EnumKeys = Object.keys(${componentName}Enum)
