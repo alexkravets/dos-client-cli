@@ -9,6 +9,7 @@ const TYPE_PHONE = 'phone'
 const TYPE_ARRAY = 'array'
 const TYPE_STRING = 'string'
 const TYPE_COUNTRY = 'country'
+const TYPE_DATETIME = 'datetime'
 const TYPE_ARRAY_ENUM = 'array_enum'
 
 const FORMAT_TYPES_MAP = {
@@ -16,6 +17,7 @@ const FORMAT_TYPES_MAP = {
   date: TYPE_DATE,
   email: TYPE_EMAIL,
   phone: TYPE_PHONE,
+  "date-time": TYPE_DATETIME,
 }
 
 const PATTERN_FORMAT_MAP = {
