@@ -4,6 +4,7 @@ const TYPE_SSN = 'ssn'
 const TYPE_ENUM = 'enum'
 const TYPE_DATE = 'date'
 const TYPE_TEXT = 'text'
+const TYPE_TIME = 'time'
 const TYPE_EMAIL = 'email'
 const TYPE_PHONE = 'phone'
 const TYPE_ARRAY = 'array'
@@ -13,6 +14,7 @@ const TYPE_ARRAY_ENUM = 'array_enum'
 
 const FORMAT_TYPES_MAP = {
   ssn: TYPE_SSN,
+  time: TYPE_TIME,
   date: TYPE_DATE,
   email: TYPE_EMAIL,
   phone: TYPE_PHONE,
