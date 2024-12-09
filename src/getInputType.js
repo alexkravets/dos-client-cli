@@ -19,7 +19,7 @@ const FORMAT_TYPES_MAP = {
   date: TYPE_DATE,
   email: TYPE_EMAIL,
   phone: TYPE_PHONE,
-  "date-time": TYPE_DATETIME,
+  'date-time': TYPE_DATETIME,
 }
 
 const PATTERN_FORMAT_MAP = {
