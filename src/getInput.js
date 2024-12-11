@@ -1,6 +1,6 @@
 'use strict'
 
-const { startCase } = require('lodash')
+const { capitalize, startCase } = require('lodash')
 
 const isEnum = require('./isEnum')
 const getInputType = require('./getInputType')
@@ -45,7 +45,7 @@ const getInput = (operation, {
     }
   }
 
-  const label = startCase(name)
+  const label = capitalize(startCase(name).toLowerCase())
   const placeholder = getInputPlaceholder(example)
 
   type = getInputType({
