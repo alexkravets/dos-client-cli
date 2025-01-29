@@ -28,7 +28,7 @@ const updateOperations = (servicesPath, servicesMap) => {
       })
 
     const serviceIndexPath = `${servicesPath}/${service}/index.js`
-    const serviceIndexContent = `import { getOperation } from "dos-client"
+    const serviceIndexContent = `import { getOperation } from "@kravc/dos-client"
 
 import schemasMap from "./schemas"
 import httpMethods from "./httpMethods"
