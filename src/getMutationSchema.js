@@ -19,7 +19,7 @@ const getMutationSchema = operation => {
   const schema = properties.map(property => getInput(operation, property))
 
   if (shouldConsiderOutput) {
-    const outputPropertiesMap = getOperationOutputProperties(operation)
+    const outputPropertiesMap = getOperationOutputProperties(operation, true) || {}
 
     for (const property of schema) {
       const { name: key } = property
